@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body align="center">
+    <form action="#" name="frmDangKy" onsubmit="return validate()">
+        <p>
+            Họ tên <input type="text" name="txtHoTen">
+        </p>
+        <p class="errHoTen" style="color: red;"></p>
+        <p>
+            Số điện thoại <input type="text" name="txtSDT">
+        </p>
+        <p class="errSDT" style="color: red;"></p>
+        <p>
+            Email <input type="text" name="txtEmail">
+        </p>
+        <p class="errEmail" style="color: red;"></p>
+
+        <p>
+            Mật khẩu <input type="text" name="txtMK">
+        </p>
+        <p class="errMK" style="color: red;"></p>
+        <p>
+           Nhập lại mk <input type="text" name="txtNMK">
+        </p>
+        <p class="errNMK" style="color: red;"></p>
+        <button type="submit">Gửi dữ liệu</button>
+    </form>
+    <script>
+        function validate() {
+            var hoTen = document.frmDangKy.txtHoTen.value;
+            var SDT = document.frmDangKy.txtSDT.value;
+            var errHoTen = document.querySelector(".errHoTen");
+            var errSDT = document.querySelector(".errSDT");
+            var Email = document.frmDangKy.txtEmail.value;
+            var errEmail = document.querySelector(".errEmail");
+            var mk =document.frmDangKy.txtMK.value;
+            var errMK=document.querySelector(".errMK");
+            var nmk=document.frmDangKy.txtNMK.value;
+            var errNMK=document.querySelector(".errNMK");
+            // bien ok se luu tru gia trị trả về cho hàm
+            
+            var ok = true;
+            // kiểm tra ho tên
+            if (hoTen == "") {
+                errHoTen.innerHTML = "Họ tên không đc rỗng";
+                ok = false;
+            }
+            else {
+                errHoTen.innerHTML = "";
+            }
+            // kiểm tra sdt
+            if (SDT == "") {
+                errSDT.innerHTML = "SDT không đc rỗng";
+                ok = false;
+            }
+            else {
+                let regSDT = /^0[0-9]{9}$/;
+                if (!SDT.match(regSDT)) {
+                    errSDT.innerHTML = "SDT không hợp lệ";
+                    ok = false;
+                } else {
+                    errSDT.innerHTML = "";
+                }
+            }
+            // kiểm tra email
+            if (Email == "") {
+                errEmail.innerHTML = "Email không đc rỗng";
+                ok = false;
+            }
+            else {
+                let regEmail = /\w+@\w+(\.\w){1,2}/;
+                if (!Email.match(regEmail)) {
+                    errEmail.innerHTML = "Email không hợp lệ";
+                    ok = false;
+                } else {
+                    errEmail.innerHTML = "";
+                }
+            }
+            // kiểm tra mk
+            if(mk==nmk){
+                
+            }
+            if (mk == "") {
+                errMK.innerHTML = "MK không đc rỗng";
+                ok = false;
+            }
+            else {
+                let regMK = /[0-9]{1,}/;
+                if (!mk.match(regMK)) {
+                    errMK.innerHTML = "mk không hợp lệ";
+                    ok = false;
+                } else {
+                    errMK.innerHTML = "";
+                }
+            }
+            // nhajap mk
+            if (nmk == "") {
+                errNMK.innerHTML = "NMK không đc rỗng";
+                ok = false;
+            }
+            else {
+                let regNMK = /[0-9]{1,}/;
+                if (!nmk.match(regNMK)) {
+                    errNMK.innerHTML = "nmk không hợp lệ";
+                    ok = false;
+                } else {
+                    errNMK.innerHTML = "";
+                }
+            }
+            if(nmk!=mk){
+                alert("MK k trufng khop");
+                ok=false;
+            }
+            // tổng kết
+            if (ok == true) {
+                alert("gửi dữ liệu thành công");
+                return true;
+            } else return false;
+        }
+
+    </script>
+
+</body>
+
+</html>

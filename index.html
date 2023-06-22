@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="banner">
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Tin Tức</a></li>
+                <li><a href="dangki.html">Đăng kí vé tháng</a></li>
+            </ul>
+
+        </nav>
+        <h1 class="tensv">Nguyễn Tùng Dương-PH29011</h1>
+        <div class="clear"></div>
+        <div class="slide" id="slide">
+            <img src="./img/1.jpg" id="hinh" alt="">
+            <div class="dieuhuong">
+                <i class="left" onclick="back()">❮</i>
+                <i class="right" onclick="next()">❯</i>
+            </div>
+            <p id="dem">1/3</p>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <article>
+            <div class="chu" align="center">
+                <h1>Vé tàu điện</h1>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="ve">
+                        <div class="tieude">Shinkansen</div>
+                        <div class="product">
+                            <img src="./img/1.jpg" class="img">
+                            <img src="./img/icon.png" class="icon">
+                        </div>
+                        <div class="xuat">
+                            <span class="gia">120000Y</span>
+                            <button class="dathang" onclick="themvaogiohang(this)">Thêm vào giỏ hàng</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="ve">
+                        <div class="tieude">Tokkyu</div>
+                        <div class="product">
+                            <img src="./img/2.jpg" class="img" alt="">
+                            <img src="./img/icon.png" alt="" class="icon">
+                        </div>
+                        <div class="xuat">
+                            <span class="gia">5000Y</span>
+                            <button class="dathang" onclick="themvaogiohang(this)">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="ve">
+                        <div class="tieude">Kaisoku</div>
+                        <div class="product">
+                            <img src="./img/3.jpeg" class="img" alt="">
+                            <img src="./img/icon.png" class="icon">
+                        </div>
+                        <div class="xuat">
+                            <span class="gia">2000Y</span>
+                            <button class="dathang" onclick="themvaogiohang(this)">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="ve">
+                        <div class="tieude">Tàu điện trên cao</div>
+                        <div class="product">
+                            <img src="./img/4.jpg" class="img">
+                            <img src="./img/icon.png" class="icon">
+                        </div>
+                        <div class="xuat">
+                            <span class="gia">70000Y</span>
+                            <button class="dathang" onclick="themvaogiohang(this)">Thêm vào giỏ hàng</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="ve">
+                        <div class="tieude">Tàu thủy</div>
+                        <div class="product">
+                            <img src="./img/5.jfif" class="img" alt="">
+                            <img src="./img/icon.png" alt="" class="icon">
+                        </div>
+                        <div class="xuat">
+                            <span class="gia">7500Y</span>
+                            <button class="dathang" onclick="themvaogiohang(this)">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="ve">
+                        <div class="tieude">Tàu ngầm</div>
+                        <div class="product">
+                            <img src="./img/6.jpg" class="img" alt="">
+                            <img src="./img/icon.png" class="icon">
+                        </div>
+                        <div class="xuat">
+                            <span class="gia">10000Y</span>
+                            <button class="dathang" onclick="themvaogiohang(this)">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="clear"></div>
+        </article>
+
+        <div class="gh"><h1>Giỏ hàng</h1></div>
+        <div class="giohang">
+            <span class="sp">Sản phẩm</span>
+            <span class="gia1">Giá</span>
+            <span class="sl">Số lượng</span>
+        </div>
+
+        <div class="cart-items">
+        </div>
+        <div class="clear"></div>
+        <div class="tong">
+            <strong>Tổng tiền</strong>
+            <span> <span id="tong1">0 </span> Yên</span>
+           
+        </div>
+        <button class="thanhtoan" onclick="thanhtoan()">Thanh toán</button>
+        
+    </div>
+
+    <footer>Assignment Lập trình cơ sở với Javascript (WEB1043)</footer>
+    <script src="changeIMG.js"></script>
+    <script src="hover.js"></script>
+    <script src="them.js"></script>
+    <div class="clear"></div>
+   
+</body>
+
+</html>

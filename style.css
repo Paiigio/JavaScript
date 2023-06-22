@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma;
+
+}
+body{
+    background-color: pink;
+}
+.clear {
+    clear: both;
+}
+.banner {
+    
+    text-align: center;
+    background-image: url("./img/anh-bau-troi-43.jpg.webp");
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.tensv {
+    border-bottom: 5px solid rgba(255, 255, 255, .3);
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul a {
+    display: block;
+    padding-right: 70px;
+    padding-left: 70px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul a:hover{
+    background-color: rgba(255, 255, 255, .3)
+}
+
+nav{
+    height: 45px;
+    line-height: 45px;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.tensv{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2em;
+    font-weight: normal;
+    color: white;
+    height: 70px;
+}
+
+.slide{
+    position: relative;
+    border-radius: 10px;
+
+}
+
+.slide img{
+    width: 100%;
+    height: 560px;
+}
+
+.slide i:first-child{
+    position: absolute;
+    top: 40%;
+    left: 0px;
+    color: aliceblue;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 20px;
+    transition: 0.6s ease;
+    font-weight: bold;
+}
+
+.slide i:last-child{
+    position: absolute;
+    top: 40%;
+    right: 0px;
+    color: aliceblue;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.slide i:hover{
+    background-color: rgba(3, 246, 246, 0.5);
+    color: crimson;
+
+}
+
+.slide p{
+    margin-top: -50px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.container{
+    max-width: 1060px;
+    margin: 10px auto;
+
+}
+
+.col{
+    width: 30%;
+    float: left;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.icon{
+    z-index: 2;
+    position: absolute;
+    cursor: pointer;
+    margin: -130px 100px;
+    display: none;
+}
+.img{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    height: 240px;
+    display: block;
+    cursor: pointer;
+}
+h1{
+    margin-top: 80px;
+    font-weight: bold;
+    font-size: xx-large;
+    background-image: linear-gradient(to right bottom ,blue,red);
+    display: inline-block;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.ve{
+    margin-top: 40px;
+}
+.tieude{
+    text-align: center;
+    font-weight: bold;
+
+    
+}
+
+.gia{
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+    flex-grow: 1;
+    color: #333;
+}
+.dathang{
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+     color: white;
+    background-color: #c33411;
+    border: none;
+    border-radius: 0.3em;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.55em 0.70em;
+    cursor: pointer;
+    text-decoration: none;
+}
+.dathang:hover{
+    color: red;
+    background-color: #2D9CDB;
+}
+
+.giohang{
+    display: flex;
+    margin-top: 35px;
+    width: 100%;
+}
+.gh{
+    color:rgba(0, 0, 0, 0.822);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    
+}
+.sp{
+    width:45%;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.311);
+    padding-bottom: 10px;
+    margin-left:25px;
+    margin-right: 20px;
+}
+.gia1{
+    width: 27%;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.311);
+    padding-bottom: 10px;
+}
+.sl{
+    width: 19%;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.311);
+    padding-bottom: 10px;
+}
+.cart-column {
+    display: flex;
+    align-items: center;
+    
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+    border-bottom: 1px solid #9a9a9a;
+}
+
+.cart-item {
+    width: 42%;
+}
+
+.cart-price {
+    margin-left: 150px;
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+    padding-left: 130px;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    margin-left: 30px;
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    line-height: 30px;
+    height: 30px;
+    width: 60px;
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid #9a9a9a;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.25em;
+}
+
+.shop-item {
+ position: relative;
+    
+   
+}
+.tong{
+    margin-right: 20px;
+    text-align: end;
+    margin-top: 10px;
+}
+strong{
+    color:black;
+    margin-right: 10px;
+}
+.thanhtoan{
+    display: block;
+    margin: 30px auto;
+    
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    background-color: red;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.thanhtoan:hover{
+    background-color: aqua;
+    color:crimson;
+}
+footer {
+    background-color: #c33411;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    margin-top: 50px;
+}
+
